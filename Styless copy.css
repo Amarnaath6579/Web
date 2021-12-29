@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: blanchedalmond; 
+}
+.brand h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    color:rgb(127, 209, 110);
+    font-weight: 700;
+}
+.banner{
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+@media(min-width:768px){
+    header{
+        padding:15px 0;
+    }
+    header::after{
+        content: '';
+        visibility: hidden;
+        display: block;
+        height:0;
+        clear:both
+    }
+    header .brand{
+        width: 200px;
+        float:left;
+    }
+    header .nav{
+        padding: 0;
+        margin:0;
+        list-style: none;
+        width: auto;
+        float: right;
+    }
+    header nav li{
+        float: left;
+    }
+    header nav li a{
+        color: brown;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 15px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .banner{
+        background-image: url(/Users/thirukumaran/Documents/web/header.png);
+        height: 360px;
+    }
+}
+@media(min-width:992px)
+{
+    .banner{
+        background-image: url(/Users/thirukumaran/Documents/web/header.png);
+    }
+}
+
+
